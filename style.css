@@ -115,6 +115,7 @@ pre{
 }
 .card .back p{
     letter-spacing: 1px;
+    font-size: 14px;
 }
 
 .card:hover .front{
@@ -204,6 +205,12 @@ pre{
     background-color: white;
     padding: 20px;
 }
+#carritoTexto{
+    font-size: 20px;
+}
+#carrito{
+    font-size: 15px;
+}
 #pagarEnlace {
     display: block;
     margin: 0 auto;
@@ -218,4 +225,149 @@ pre{
 #totalTexto {
     text-align: center;
     font-weight: bold;
+}
+
+#infoLaurel {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoLimonero {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoMandarino {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoNaranjo {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoGuanabana {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoSaman {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoPechiche {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoGuachapeli {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoGuayacan {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoMaceta {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoMacetaGrande {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoTierra {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoAbono {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoInsecticida {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#infoTijeras {
+    padding: 5px ;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
