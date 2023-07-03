@@ -32,18 +32,62 @@ btnPagar.addEventListener('click', function() {
   if(numeroTarjeta == "5555 5555 5555 5555"){
     if(fechaVencimiento == "12/30"){
         if(cvv = "123"){
-            alert("Muchas gracias por su preferencia, " + nombres + ' ' + apellidos +
-            "!\n Pago exitoso!!"+
-            "\n Se realirá la entrega entre los proximos 2 dias");
-            window.location.href = 'index.html';
+          if(correoElectronico === '' || dirrecion === '' || referencia === ''){
+            Swal.fire({
+              title: "Error",
+              text: "Por favor, complete todos los campos",
+              icon: "error",
+              confirmButtonColor: 'red',
+            });
+          }else{
+            Swal.fire({
+              title: "PAGO EXITOSO!!",
+              text: "Muchas gracias por su preferencia, " + nombres + ' ' + apellidos,
+              icon: "success",
+              allowOutsideClick: false,
+              allowEscapeKey: false,
+              allowEnterKey: false,
+              stopKeydownPropagation: false,
+              confirmButtonColor: 'green',
+            }).then(function() {
+              window.location.href = 'index.html';
+            });
+          }
         }else{
-            alert("ERROR: Colocar correctamente la CVV")
+          Swal.fire({
+            title: "ERROR",
+            text: "Colocar correctamente la CVV",
+            icon:"error",
+            allowOutsideClick: false,
+            allowEscapeKey:false,
+            allowEnterKey:false,
+            stopKeydownPropagation: false,
+            confirmButtonColor: 'red',
+          });
         }
     }else{
-        alert("ERROR: Colocar correctamente la FECHA DE VENCIMIENTP")
+      Swal.fire({
+        title: "ERROR",
+        text: "Colocar correctamente la FECHA DE VENCIMIENTO",
+        icon:"error",
+        allowOutsideClick: false,
+        allowEscapeKey:false,
+        allowEnterKey:false,
+        stopKeydownPropagation: false,
+        confirmButtonColor: 'red',
+      });
     }
   }else{
-    alert("ERROR: Colocar correctamente el NUMERO DE TARJETA")
+    Swal.fire({
+      title: "ERROR",
+      text: "Colocar correctamente el NUMERO DE TARJETA",
+      icon:"error",
+      allowOutsideClick: false,
+      allowEscapeKey:false,
+      allowEnterKey:false,
+      stopKeydownPropagation: false,
+      confirmButtonColor: 'red',
+    });
   }
 });
 
@@ -53,11 +97,30 @@ btnPagar2.addEventListener('click', function() {
     var correoElectronico2 = inputCorreoElectronico2.value;
     var dirrecion2 = inputDirecccion2.value;
     var referencia2 = inputReferencia2.value;
-  
-    alert("Muchas gracias por su preferencia, " + nombres2 + ' ' + apellidos2 +
-    "!\n Pago exitoso!!"+
-    "\n Se realirá la entrega entre los proximos 2 dias");
-    window.location.href = 'index.html';
+
+    if (nombres2 === '' || apellidos2 === '' || correoElectronico2 === '' || dirrecion2 === '' || referencia2 === '') {
+      Swal.fire({
+        title: "Error",
+        text: "Por favor, complete todos los campos",
+        icon: "error",
+        confirmButtonColor: 'red',
+      });
+    } else {
+      var randomNumber = Math.floor(Math.random() * (9999999 - 1000000 + 1)) + 1000000;
+      Swal.fire({
+        title: "PAGO EXITOSO!!",
+        text: "Muchas gracias por su preferencia, " + nombres2 + ' ' + apellidos2,
+        icon: "success",
+        footer:'<span style="font-weight: bold; color: red;">Su número de pedido es: ' + randomNumber + '</span>',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: false,
+        stopKeydownPropagation: false,
+        confirmButtonColor: 'green',
+      }).then(function() {
+        window.location.href = 'index.html';
+      });
+    }
   
 });
 
